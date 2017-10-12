@@ -1,11 +1,12 @@
-import React from 'react';
+import React  from 'react';
+import {Link} from 'react-router-dom';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Search type</h1>
-      </div>
-    );
-  }
-}
+const App = (props) => {
+  return (
+    <div className="container">
+      {props.children}
+    </div>
+  );
+};
+
+export default App;
